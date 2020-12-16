@@ -1,0 +1,164 @@
+*********************************
+ 1. Selenium is a open source tool. 
+ 2. It supports only web based applications not support windows and desktop applications.
+ 3. Selenium has no UI it is in the form of API's.
+ 4. It support multi browser and multi OS.
+ 6. It supports multi languages java, c#, Phtyton, Ruby , Javascript.
+ 
+ -----------------------------------------------------------------------------
+ 
+ Locators in webElements
+ // id is unique value -1
+ ID - By.id("value")
+ // name  is unique value -1
+ Name -By.name("value")
+ 
+ //only for links all links are represented by a tag <a /a>
+ Link Text - By.linktext("linktext") -4
+ // not recommended if you have link text very lengthy then use this locator.
+ Partial Link Text -by.partiallinktext("mention partial part text")  -5
+ Tag Name -
+ // class name is having duplicates the designer will give same class for different button 
+ Class Name - By.classname("class value") -4
+ CSS Selector - By.cssselector("#id value") -3
+ XPATH - //tagname[@attributeid ='Attributevalue'] -2 
+ 
+ -----------------------------------------------------------------------------------
+ Dynamic xpath:
+ 
+ When id,name value not given and in some cases they are giving absoluate xpath then we use dynamic xpath.
+ 
+ Syntax:
+ 
+ //input[@class='value']
+ //input[@name='value']
+ //input[contains(@class,'value')]
+ 
+ Dynamic id :input
+ id = test_123
+ By.id("test_123)
+ //input[contains(@id,'test_')]
+ 
+starts-with 
+id = test_456
+id=test_888
+id=test_test_123
+
+//input[starts-with(@id,'test_')]
+
+ends-with
+id=123_test_t
+id=145_test_t
+id=12367_test_t
+
+//input[ends-with(@id,'_test_t)
+
+Dynamic xpath for linktext - text() is a function
+
+//a[contains(text(),'Google Search'].click();
+
+//absoluate xpath is not recommented
+
+//performance is slow
+//not reliable
+//can be change at any time in future
+
+----------------------------------------------------
+
+Javascript alerts and pop ups
+
+in application alerts are displayed with ok or cancel button . these type of alerts are javascript alerts.
+developed by developers.
+
+USing Alert api in selenium we handle alerts.
+
+methods - driver.switchto().alert(); it will move focus to alert
+gettext() - showing alert message
+alert.accept(); - to click ok button
+alert.dismiss();- to click cancel button
+
+------------------------------------------------
+sitecoretestpump/Youaregoodperson2
+-------------------------------------------------
+TestNG:
+open source ,free
+JAr files
+-- Java Unit testing framework
+
+testng --- unit test framework
+TDD - Test Driven Development
+purpose -- Design test cases in a systematic way
+--html reports
+--different annotations
+--priorities/Sequence
+--dependency
+--grouping
+--data provider
+
+Install testng in Eclipse
+
+http://beust.com/eclipse/
+
+--------------------------------------------------------------------
+It is used to support FileUtils class in selenium
+
+How to download and install commons-io-2.6-bin.zip?
+
+
+Commons IO is a library of utilities to assist with developing IO functionality developed by Apache Software Foundation. You can follow these steps to download and install commons-io-2.6-bin.zip to use Commons IO:
+
+1. Go to the Apache Commons IO Website.
+
+2. Click the "Download" link from the left side menu. You see the download page showing up.
+
+3. Click the "Archives..." link at the end of the page. You see "Apache Commons Project Distributions" folder list showing up.
+
+4. Click and open the "binaries/" folder.
+
+5. Click and download "commons-io-2.6-bin.zip".
+
+6. Save the downloaded file as \fyicenter\commons-io-2.6-bin.zip.
+
+7. Unzip the downloaded file \fyicenter\commons-io-2.6-bin.zip. It will create the \fyicenter\commons-io-2.6 folder.
+
+8. Check to ensure that the \fyicenter\commons-io-2.6\commons-io-2.6.jar file is there.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

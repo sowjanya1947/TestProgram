@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- In Suite if we mention "verbose"  value once script is ran in console give the detailed output. verbose range is 1 to 10. mostly give 4 or 5 .     -->
+ <!--  thread-count="5" >  means it will launch 5 mentioned browsers and run mentioned test cases parallel.
+  parallel="methods" means run test cases parallel whatever mentioned methods,classes,tests in parallel tag value . parallely execute mentioned classes -->
+ 
+<suite name="Googlepage Test Automation Suite" verbose="5" >
+<!-- <suite name="Googlepage Test Automation Suite" verbose="5" parallel="methods" thread-count="5" > -->
+ 
+ <listeners>  
+        <listener class-name="com.RetrylogicAnalyzer.MyTransformer"/>  
+</listeners>  
+
+  <test name="Google Homepage Test" >
+  <!-- 
+       <groups>
+            <run>
+                  <exclude name = "homepage"/>
+            </run>
+       </groups> -->
+       
+  
+  <parameter name="Username" value="Regaluser"/>
+  <parameter name="Password" value="Adminuser"/>
+  
+    <classes>
+        <class name="com.testng.GoogleTest"/> 
+     
+  
+       
+       
+<!--       <class name="com.testng.TestNgBasics"/> -->
+<!--       <class name="com.testng.TestNGFeatures"/> --> 
+      
+        <class name="com.testng.ParameterTest"/> 
+        <class name="com.testng.HardandSoftAssert"> 
+        
+        <methods>
+               <exclude name = "login"/>  
+        </methods>
+        </class>
+     
+    </classes>
+  </test>
+</suite>
