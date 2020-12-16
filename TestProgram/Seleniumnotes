@@ -125,6 +125,91 @@ Commons IO is a library of utilities to assist with developing IO functionality 
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
+push eclipse code through github repository using eclipse IDE.
+
+step1 :
+
+add gitrepositories to eclipse
+windows-> Perspective->Open Perspective->Other->Git    
+
+or
+
+in eclipse srach icon enter Git Repositories and add
+
+then git repositories window will appear in left side corner.
+
+Step 2:  
+
+add New git repository folder using option click on "Create a new git repositories and add it to the view" icon
+
+Give repository name and click on create button.
+With given name local git repository will create.  go to that folder .git empty folder will create.
+
+Step 3:
+
+Now go to your Eclipse project and right ckick on it
+
+Team ->Shareproject
+
+in open window give gitrepository folder and submit.
+
+Now check Eclipse project will be available in local git repository folder go and check.
+
+Step 4:
+
+Go to github.com and create a new repository to push this code.
+
+
+Step 5:
+in eclipse project > symbol is displayed means code is not moved to local git repository.
+
+Now will commit this code to local git repository.
+
+right click on eclipse project ->Team ->Commit
+
+in open window click on ++ symbol so all files added to below section and give comment and click on "Commit" button.
+
+Now > symbol will dis appear and Cylindrical symbol is displayed to eclipse project means code is moved to local git repository.
+
+Step 5:
+
+Now will move code to Github central repository.
+
+Right click on eclipse project -> Team > Push Branch "Master"  
+
+Here copy the github url and paste it in URI box and give github username and password and click preview
+Next window click preview
+Next window click push 
+it will ask github credentials give and after it will show window with code is pushed.
+
+
+Now go and check in Github central repository all code is moved .
+
+*************************************************************************************
+
+Updating code and move changes to github master branch.
+
+Added comment on Google page and added text on seleniumnotes text file. these are existing files in github so shows > symbol means code changed.
+if add new file are class it will show  ? symbol meand need to move new file to github master branch.
+
+Now go to eclipse project right click ->Team -> Commit 
+
+in window add changes to below section and click on "Commit and Push" button 
+
+Give github username and password then window will open code is pushed.
+
+Now go and check github repositories changes are moved.
+
+*******************************************************************************************************
+
+
+ 
+
+
+
+
+
+
 
 
 
