@@ -214,7 +214,49 @@ now changes are available in eclipse project.
 
 
 ********************************************************** 
+ How to checkout the particular version.
  
+ rightclick on eclipse project -> Team-> Show in History
+
+in open window shows how many commits we did and versions. 
+
+select which version we want and rightclick-> checkout 
+
+
+now that version of code is available in eclipse program. now move that version to git hub central.
+
+
+rightclick eclipse project-> Team -> Push Head
+
+in open window give branch(master) and select checkbox Force Overwritten branch click preview.
+
+give github credentials in next window click on push and again give github credentials.
+
+go and check github new code available.
+
+************************************************************************************************
+
+How to clone existing project in github to eclipse.
+
+in git repository click on option " clone existing repository"
+
+here give github url and give credentials click next in next window select master and click next in next window click finish.
+
+now check in git repositories this project is shown.
+
+now move this local git project to eclipse project view.
+
+in eclise view right click -> Import
+
+In window Git->Projects from Git click next
+in next window select Existing local repository click next 
+in Next window select which project you want click next
+in next window click next in next window click finish.
+
+now check oin eclipse project is available.
+if project is showing > are red color update project and commit those changes to github central.
+
+********************************************************************************************************************
 
 
 
