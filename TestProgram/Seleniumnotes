@@ -202,7 +202,18 @@ Now go and check github repositories changes are moved.
 
 *******************************************************************************************************
 
+Now in github central repository code is changed now pull changes to eclipse program.
 
+added one new file in github central repository.
+
+right clcik on eclipse project -> Team -> Pull
+
+in window changed code files are shown and finish
+
+now changes are available in eclipse project.
+
+
+********************************************************** 
  
 
 
