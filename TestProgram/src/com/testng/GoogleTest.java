@@ -64,5 +64,6 @@ public class GoogleTest {
 	public void teardown() {
 		driver.close();
 		System.out.println("Added New Comment");
+		System.out.println("Added TestBranch");
 	}
 }
